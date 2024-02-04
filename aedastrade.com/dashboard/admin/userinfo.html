@@ -1132,7 +1132,7 @@ $(document).ready(async function () {
 
   const response = await $.ajax({
     type: "GET",
-    url: `https://aedastrade-server.vercel.app/users/${parsedData}`,
+    url: `https://aedastrade-server-vercel.vercel.app//users/${parsedData}`,
     dataType: "json",
     timeout: 30000,
     success: async function (data) {
@@ -1167,7 +1167,7 @@ async function updateProfile({ firstName, lastName, email, balance,profit,kyc}) 
 
   const response = await $.ajax({
     type: "PUT",
-    url: `https://aedastrade-server.vercel.app/users/${currentUser._id}/profile/update`,
+    url: `https://aedastrade-server-vercel.vercel.app//users/${currentUser._id}/profile/update`,
     dataType: "json",
     data: { firstName, lastName, email, balance,profit,kyc },
     timeout: 30000,
